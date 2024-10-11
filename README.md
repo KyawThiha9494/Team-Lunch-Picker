@@ -39,7 +39,7 @@ The **Team-Lunch-Picker** allows users to submit restaurant choices via a web in
 
 2. Navigate to the front-end folder:
     ```bash
-    cd frontend
+    cd Team-Lunch-Picker-Client
     ```
 
 3. Install dependencies:
@@ -64,9 +64,7 @@ The **Team-Lunch-Picker** allows users to submit restaurant choices via a web in
    #### For H2 Database (Development):
    By default, the project uses an in-memory H2 database for development. No additional configuration is required.
 
-4. Run the Spring Boot application using your IDE or terminal:
-
-  mvn spring-boot:run
+4. Run the Spring Boot application using IDE or terminal:
 
 5. The back-end will be accessible at http://localhost:8080
 
@@ -76,10 +74,12 @@ Once the back-end is running, Swagger UI is available for API documentation and 
 http://localhost:8080/swagger-ui.html
 
 ## Endpoints
-Here are the key API endpoints:
+Here are the API endpoints:
 
 POST /api/restaurants/add: Submit a new restaurant.
+
 GET /api/restaurants/random: Get a random restaurant from the submitted list.
+
 GET /api/restaurants/all: Get all submitted restaurants.
 
 ### Example API Requests
@@ -122,3 +122,12 @@ Response:
 ![Submit Restaurant](./images/random-restaurant-page-show-submitted-restaurants.png)
 
 ![Submit Restaurant](./images/random-generated-restaurant.png)
+
+
+### Back-end API
+
+![Submit Restaurant](./images/all-api-swagger.jpeg)
+
+![Submit Restaurant](./images/submit-restaurant.jpeg)
+
+![Submit Restaurant](./images/generate-random.jpeg)
